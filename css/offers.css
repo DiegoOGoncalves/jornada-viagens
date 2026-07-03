@@ -63,6 +63,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -70,14 +71,16 @@
     width: 420px;
     height: 308px;
   }
+}
 
-  @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .card {
     width: 588px;
     height: 308px;
   }
+}
 
-  @media screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
   .offers-cards {
     width: 1250px;
     margin: 0 auto;
