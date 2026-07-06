@@ -46,6 +46,11 @@ body {
   font-family: 'Montserrat';
   color: var(--text-primary-color);
 }
+
+.categories .section-tittle {
+  width: 312px;
+  margin: 0 auto;
+}
 .section-tittle h2 {
   font-size: 28px;
   font-weight: var(--titles-weight);
