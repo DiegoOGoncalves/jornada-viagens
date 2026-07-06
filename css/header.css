@@ -1,4 +1,4 @@
-header {
+.main-header {
   background-color: var(--background-tertiary-color);
   display: flex;
   flex-direction: row;
@@ -43,7 +43,7 @@ nav {
   margin: 16px 0 0;
 }
 .list-links li a {
-  color: var(--text-secundary-color);
+  color: var(--text-secoundary-color);
   text-decoration: none;
   font-weight: var(--menu-text-weight);
   font-size: 24px;
@@ -74,7 +74,7 @@ nav {
   }
 }
 @media screen and (min-width: 1024px) {
-  header {
+  .main-header {
     padding: 38px 120px;
   }
   .logo {
@@ -94,7 +94,7 @@ nav {
   }
 }
 @media screen and (min-width: 1920px) {
-  header {
+  .main-header {
     padding: 38px 160px;
   }
 }
