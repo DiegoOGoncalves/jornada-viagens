@@ -81,3 +81,40 @@
   font-weight: var(--titles-weight);
   margin: 8px 0 0;
 }
+
+@media screen and (min-width: 768px) {
+  .categories .section-tittle {
+    width: 100%;
+  }
+  .categories-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cards {
+    width: 420px;
+    height: 308px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cards {
+    width: 588px;
+    height: 308px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .categories-cards {
+    width: 1250px;
+    margin: 0 auto;
+  }
+}
+
+.categories-cards .single-line {
+  padding-top: 50px;
+}
+.categories-cards .single-line .bus img {
+  margin: 10px 0 20px;
+}
