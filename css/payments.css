@@ -1,0 +1,69 @@
+.payments .image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  height: 460px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.content-container {
+  display: flex;
+}
+
+@media screen and (max-width: 439px) {
+  .payments .content-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .payments .content-container .image-gallery {
+    width: 100%;
+  }
+}
+
+.payments .content-container .image-gallery .image.first {
+  background: url(../img/bag-mobile.png) no-repeat;
+  background-size: cover;
+}
+
+.payments .content-container .image-gallery .image.second {
+  background: url(../img/passport-mobile.png) no-repeat;
+  background-size: cover;
+}
+.payments .content-container .image-gallery .image.third {
+  background: url(../img/person-mobile.png) no-repeat;
+  background-size: cover;
+}
+
+.payments .content-container .image-gallery .image.colspan-2 {
+  grid-column: span 2;
+}
+
+@media (min-width: 768px) {
+  .payments .content-container .image-gallery .image.first {
+    background: url(../img/bag-tablet.png) no-repeat;
+    background-size: cover;
+  }
+
+  .payments .content-container .image-gallery .image.second {
+    background: url(../img/passport-tablet.png) no-repeat;
+    background-size: cover;
+  }
+  .payments .content-container .image-gallery .image.third {
+    background: url(../img/person-tablet.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 440px) {
+  .payments .content-container {
+    justify-content: space-between;
+  }
+  .payments .content-container .image-gallery {
+    width: 790px;
+  }
+  .payments .content-container .text-content {
+    width: 360px;
+  }
+}
