@@ -27,6 +27,16 @@ Cores de Textos */
 }
 
 /*CSS RESET*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body,
 img,
 h1,
@@ -46,6 +56,13 @@ body {
   font-family: 'Montserrat';
   color: var(--text-primary-color);
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 section {
   width: 312px;
   margin: 0 auto 88px;
