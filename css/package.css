@@ -53,12 +53,12 @@ nav {
   margin: 0;
   background: url(../img/hero-package-mobile.png) no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center right;
   min-height: 400px;
 }
 
 .section-title-package {
-  width: 280px;
+  width: min(100%, 280px);
   margin: 0 auto;
   padding: 48px 0 32px;
 }
@@ -96,7 +96,7 @@ nav {
   .hero-package {
     background-image: url('../img/hero-package-desktop.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center right;
     min-height: 650px;
 
     display: flex;
@@ -106,7 +106,8 @@ nav {
   }
 
   .section-title-package {
-    width: 640px;
+    width: 100%;
+    max-width: 640px;
     margin: 0;
     padding: 0;
   }
@@ -123,7 +124,8 @@ nav {
   }
 
   .hero-package h2 {
-    width: 520px;
+    width: 100%;
+    max-width: 520px;
 
     font-size: 24px;
     line-height: 1.5;
@@ -159,10 +161,11 @@ nav {
   .hero-package {
     min-height: 620px;
     padding: 132px 120px 0;
+    background-position: center right;
   }
 
   .section-title-package {
-    width: 720px;
+    max-width: 720px;
   }
 
   .hero-package h1 {
@@ -170,16 +173,17 @@ nav {
   }
 
   .hero-package h2 {
-    width: 560px;
+    max-width: 560px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .hero-package {
     padding: 132px 160px 0;
+    background-position: center right;
   }
 
   .section-title-package {
-    width: 720px;
+    max-width: 720px;
   }
 }
