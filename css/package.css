@@ -51,25 +51,135 @@ nav {
 .hero-package {
   width: 100%;
   margin: 0;
+  background: url(../img/hero-package-mobile.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+
+.section-title-package {
+  width: 280px;
+  margin: 0 auto;
+  padding: 48px 0 32px;
 }
 .hero-package h1 {
   color: var(--text-secondary-color);
+  font-size: 40px;
+  line-height: 1.1;
+  margin: 0;
 }
 .hero-package h2 {
-  padding: 32px 24px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   font-weight: var(--text-weight);
   font-size: 20px;
   line-height: 1.5;
-  text-align: center;
   color: var(--text-secondary-color);
+  text-align: left;
 }
-.section-title .package-hr {
-  margin: 16px 0 0 0;
+.section-title-package .package-hr {
+  margin: 16px 0 24px;
+  width: 132px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 2px;
 }
-.hero-package .package-img {
+/* .hero-package .package-img {
   height: 400px;
   width: 100%;
   background: url(../img/hero-package-mobile.png) no-repeat;
   background-size: cover;
+}
+ */
+@media screen and (min-width: 768px) {
+  .hero-package {
+    background-image: url('../img/hero-package-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 120px 64px 0;
+  }
+
+  .section-title-package {
+    width: 640px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-package h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  .section-title-package .package-hr {
+    width: 180px;
+    margin: 16px 0 32px;
+  }
+
+  .hero-package h2 {
+    width: 520px;
+
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .navigation-menu {
+    margin-top: 0;
+    width: 467px;
+  }
+
+  .navigation-menu label {
+    display: none;
+  }
+
+  .navigation-menu nav {
+    display: block;
+  }
+
+  .navigation-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navigation-menu ul li {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-package {
+    min-height: 620px;
+    padding: 132px 120px 0;
+  }
+
+  .section-title-package {
+    width: 720px;
+  }
+
+  .hero-package h1 {
+    font-size: 64px;
+  }
+
+  .hero-package h2 {
+    width: 560px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-package {
+    padding: 132px 160px 0;
+  }
+
+  .section-title-package {
+    width: 720px;
+  }
 }
