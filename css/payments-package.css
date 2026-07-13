@@ -1,0 +1,58 @@
+.payments .package-image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  height: 460px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.payments .content-container .package-image-gallery .image.first {
+  background: url(../img/japao-mobile-1.png) no-repeat;
+  background-size: cover;
+}
+
+.payments .content-container .package-image-gallery .image.second {
+  background: url(../img/japao-mobile-2.png) no-repeat;
+  background-size: cover;
+}
+.payments .content-container .package-image-gallery .image.third {
+  background: url(../img/japao-mobile-3.png) no-repeat;
+  background-size: cover;
+}
+
+.payments .content-container .package-image-gallery .image.colspan-2 {
+  grid-column: span 2;
+}
+
+@media (min-width: 768px) {
+  .payments .content-container .package-image-gallery .image.first {
+    background: url(../img/japao-tablet-1.png) no-repeat;
+    background-size: cover;
+  }
+
+  .payments .content-container .package-image-gallery .image.second {
+    background: url(../img/japao-tablet-2.png) no-repeat;
+    background-size: cover;
+  }
+  .payments .content-container .package-image-gallery .image.third {
+    background: url(../img/japao-tablet-3.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content-container {
+    display: flex;
+  }
+  .payments .content-container {
+    justify-content: space-between;
+  }
+  .payments .content-container .image-gallery {
+    width: 790px;
+    margin: 0;
+  }
+  .payments .content-container .text-content {
+    width: 360px;
+  }
+}
