@@ -9,12 +9,17 @@
   width: 312px;
   height: 220px;
   background-color: var(--background-secondary-color);
-  text-align: center;
   border-radius: 16px;
   padding: 24px;
   box-sizing: border-box;
   text-decoration: none;
   color: var(--text-primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
 }
 /* .categories-cards {
   margin-bottom: 80px;
@@ -126,9 +131,19 @@
   }
 }
 
+.categories-cards .card img {
+  display: block;
+  margin: 0 auto;
+}
+
+.categories-cards .card h3 {
+  margin: 0;
+}
+
 .categories-cards .single-line {
   padding-top: 50px;
 }
-.categories-cards .single-line .bus img {
-  margin: 10px 0 20px;
+
+.categories-cards .single-line img {
+  margin-bottom: 10px;
 }
